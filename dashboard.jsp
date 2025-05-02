@@ -24,10 +24,10 @@
                 <td>${course.name}</td>
                 <td>${course.instructor}</td>
                 <td><a href="EnrollServlet?courseId=${course.id}">Enroll</a></td>
+                <td><a href="LogoutServlet">Logout</a></td>
             </tr>
         </c:forEach>
     </table>
-
     <h2>Your Enrolled Courses</h2>
     <ul>
         <%-- Will display enrolled courses from session --%>
