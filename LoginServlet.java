@@ -8,12 +8,11 @@ public class LoginServlet extends HttpServlet {
 
     private static final Map<String, String> users = new HashMap<>();
     static {
-        users.put("student1", "pass1");
-        users.put("student2", "pass2");
+        users.put("student_1", "pass_1");
+        users.put("student_2", "pass_2");
         users.put("admin", "admin123");
     }
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // 1. Get username & password from request
         String username = request.getParameter("username");
         String password = request.getParameter("password");

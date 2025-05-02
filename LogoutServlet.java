@@ -5,9 +5,7 @@ import javax.servlet.http.*;
 
 @WebServlet("/LogoutServlet")
 public class LogoutServlet extends HttpServlet {
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) 
-            throws ServletException, IOException {
-        // TODO: Implement logout logic
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // 1. Invalidate session
         HttpSession session = request.getSession(false); // false = don't create if doesn't exist
         if (session != null) {

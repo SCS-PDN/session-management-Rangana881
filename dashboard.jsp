@@ -34,6 +34,7 @@
         <c:forEach items="${enrolledCourses}" var="course">
             <li>${course.name} (${course.id})</li>
         </c:forEach>
+
     </ul>
 </body>
 </html>

@@ -7,17 +7,7 @@ import model.Course;
 
 @WebServlet("/EnrollServlet")
 public class EnrollServlet extends HttpServlet {
-    private List<Course> getAvailableCourses() {
-        return Arrays.asList(
-                new Course("C101", "Mathematics", "Dr. Smith"),
-                new Course("C102", "Physics", "Dr. Johnson"),
-                new Course("C103", "Chemistry", "Dr. Brown"),
-                new Course("C104", "Computer Science", "Dr. Allen")
-        );
-    }
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) 
-            throws ServletException, IOException {
-        // TODO: Implement enrollment logic
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // 1. Get courseId from URL parameter
         String courseId = request.getParameter("courseId");
 
